@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,7 +15,9 @@
       <div class="modal-content">
        <h3>Want to Save 10% on Your First Cake Purchase?! Enter your email here, and join the cake club!</h3>
         <div class="input">
+          <label for="email for discount">
           <input class="modal-email-field" type="text" >
+          </label>
         </div>
         <div>
           <button class="margin-top--small modal-button">JOIN THE CAKE CLUB!</button>
@@ -32,59 +34,113 @@
             <a href="order.html">&bull; Order a Cake</a>
             <a href="gallery.html">&bull; The Gallery</a>
           </div>
-          <img class="cake-review" src="../images/cake_review.png">
+          <img class="cake-review" src="../images/cake_review.png" alt="'beautiful and delicious cakes!' - a satisfied customer">
         </div>
         <i class="close fas fa-times"></i>
         <a href="landing.html">
-          <h2 class="logo"><img src="../images/cake_logo.png"></h2>
+          <h1 class="logo">Custom Cakery</h2>
         </a>
       </div>
-      <form>
-        <div>Name: </div>
-        <input required type="text">
-        <div>Address:</div>
-        <input required type="text">
-        <div>Email Address:</div>
-        <input required type="text">
-        <div>Phone Number:</div>
-        <input required type="number">
-        <div>Desired Cake</div>
+      <form class="order-form">
+        <div class="subtext margin-top--small">All fields required!</div>
+        <label for="name">Name:</label>
+        <input required type="text" id="name">
+        <label for="address">Address:</label>
+        <input required type="text" id="address">
+        <label for="email">Email Address:</label>
+        <input required type="text" id="email">
+        <label for="phone number">Phone Number:</label>
+        <input required type="number" id="phone-number">
+        <label for="desired cake" class="new-block">Desired Cake</label>
+        <label for="whole cake">
         <input type="radio" name="cake">Whole Cake
+        </label>
+        <label for="half dozen cupcakes">
         <input type="radio" name="cake">1/2 Dozen Cupcakes
+        </label>
+        <label for="dozen cupcakes">
         <input type="radio" name="cake">1 Dozen Cupcakes
-        <input type="radio" name="cake" checked>Other
-        <div>Cake Shape (excludes cupcakes)</div>
+        </label>
+        <label for="other size">
+        <input type="radio" name="cake">Other
+        </label>
+        <label for="cake size" class="new-block">Cake Shape (excludes cupcakes)</label>
+        <label for="circle">
         <input type="radio" name="shape">Circle
+        </label>
+        <label for="square">
         <input type="radio" name="shape">Square
+        </label>
+        <label for="rectangle">
         <input type="radio" name="shape">Rectangle
+        </label>
+        <label for="other shape">
         <input type="radio" name="shape" checked>Other
-        <div>Do You Want Writing?</div>
+        </label>
+        <label for="do you want writing?" class="new-block">Do You Want Writing?</label>
+        <label for="yes">
         <input type="radio" name="words" checked>Yes
+        </label>
+        <label for="no">
         <input type="radio" name="words">No
-        <div>If you selected "writing," please indicate text here: </div>
+        </label>
+        <label for="writing" class="new-block">If you selected "writing," please indicate text here:
         <input type="text" placeholder="cake text">
-        <div>Flavor(s)</div>
+        </label>
+        <label for="flavors" class="new-block">Flavor(s)</label>
+        <label for="chocolate flavor">
         <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Filling(s)</div>
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Frosting(s)</div>
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="other">Other
-        <div>Topping(s)</div>
-        <input type="checkbox" checked value="chocolate">Chocolate Shavings
-        <input type="checkbox" checked value="vanilla">Sprinkles
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Approx. How Many People Should Cake Feed?</div>
-        <select name="" id="">
+        </label>
+        <label for="vanilla flavor">
+          <input type="checkbox" checked value="vanilla">Vanilla
+        </label>
+        <label for="fruit flavor">
+          <input type="checkbox" checked value="fruit">Fruit
+        </label>
+        <label for="other flavor">
+          <input type="checkbox" checked value="other">Other
+        </label>
+        <label for="fillings" class="new-block">Filling(s)</label>
+        <label for="vanilla filling">
+          <input type="checkbox" checked value="vanilla">Vanilla
+        </label>
+        <label for="chocolate filling">
+          <input type="checkbox" checked value="chocolate">Chocolate
+        </label>
+        <label for="fruit">
+          <input type="checkbox" checked value="fruit">Fruit
+        </label>
+        <label for="other filling">
+          <input type="checkbox" checked value="other">Other
+        </label>
+        <label for="frosting" class="new-block">Frosting(s)</label>
+        <label for="fruit frosting">
+          <input type="checkbox" checked value="fruit">Fruit
+        </label>
+        <label for="chocolate frosting">
+          <input type="checkbox" checked value="chocolate">Chocolate
+        </label>
+        <label for="vanilla frosting">
+          <input type="checkbox" checked value="vanilla">Vanilla
+        </label>
+        <label for="other frosting">
+          <input type="checkbox" checked value="other">Other
+        </label>
+        <label for="toppings" class="new-block">Topping(s)</label>
+        <label for="chocolate shavings">
+          <input type="checkbox" checked value="chocolate-shavings">Chocolate Shavings
+        </label>
+        <label for="sprinkles">
+          <input type="checkbox" checked value="sprinkles">Sprinkles
+        </label>
+        <label for="fruit topping">
+          <input type="checkbox" checked value="fruit">Fruit
+        </label>
+        <label for="other topping">
+          <input type="checkbox" checked value="other">Other
+        </label>
+        <label for="how many people should cake feed" class="new-block">Approx. How Many People Should Cake Feed?
+        <select>
           <option value="1-10">1 - 10</option>
           <option value="10-20">10 - 20</option>
           <option value="10-20">20 - 30</option>
@@ -92,25 +148,29 @@
           <option value="40-50">40 - 50</option>
           <option value="50+">50+</option>
         </select>
+      </label>
         <div>
-          <textarea name="" id="" cols="30" rows="10">Please Provide Details if Selected "Other" Anywhere on Form</textarea>
+        <label for="other details">
+          <textarea name="" cols="30" rows="10" id="other-details" placeholder="Please Provide Details if Selected 'Other' Anywhere on Form"></textarea>
+        </label>
         </div>
-        <div>Desired Pickup Date <br>(*note this is desired only and is not a confirmation, we will email you with details or
-          contact you if more information is required regarding your cake.</div>
+        <label for="desired pickup date" class="new-block">Desired Pickup Date
+        <p><br>(*note* this is desired only and is not a confirmation, we will email you with details or
+          contact you if more information is required regarding your cake.)</p>
         <input required type="number">
+      </label>
         <div>
           <button type="submit" class="form-submit">Submit Form</button>
         </div>
-        <div class="subtext margin-top--small">All fields required!</div>
       </form>
     </div>
     <div class="footer">
-      <div>Contact Us</div>
+      <div class="contact-head">Contact Us</div>
       <div>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-facebook-square"></i></a>
-        <a href=""><i class="fas fa-envelope-open"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" title="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/" title="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://gmail.com/" title="email"><i class="fas fa-envelope-open"></i></a>
+        <a href="https://twitter.com/" title="twitter"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   <script type="text/javascript" src="../main.js"></script>
